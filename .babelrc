@@ -1,0 +1,14 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "components": "./components",
+        "store": "./store",
+        "actions":"./store/actions",
+        "types":"./store/types"
+      }
+    }]
+  ]
+}
